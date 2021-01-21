@@ -1,7 +1,7 @@
 // import styles from "./Card.module.css";   module olarak cagirinca
 import "./Card.style.css"; // normal caigirinca
 // import "./Card.style.scss";
-import { StyledCardWrapper,StyledDescription ,StyledText } from "./Card.style";
+import { StyledCardWrapper, StyledDescription, StyledMovieImage, StyledText } from "./Card.style";
 
 
 // const cardStyle = {
@@ -10,6 +10,7 @@ import { StyledCardWrapper,StyledDescription ,StyledText } from "./Card.style";
 // }
 
 export const Card = (props) => {
+
     return (
         <div>
             {/* <div className={styles.cardWrapper}>
@@ -21,6 +22,7 @@ export const Card = (props) => {
             </div> */}
 
             <StyledCardWrapper>
+                <StyledMovieImage src={props.imgSrc} alt={"Movie Poster"}/>
                 <StyledText>{props.title}</StyledText>
                 <StyledDescription>{props.desc}</StyledDescription>
             </StyledCardWrapper>
