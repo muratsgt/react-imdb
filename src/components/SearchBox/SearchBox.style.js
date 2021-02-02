@@ -2,6 +2,7 @@ import styled, {css} from "styled-components";
 
 export const StyledButton = styled.button`
     border-radius: 0.2rem;
+    padding: 0.2rem;
 `;
 
 export const StyledSearchButton = styled(StyledButton)`
@@ -11,12 +12,13 @@ export const StyledSearchButton = styled(StyledButton)`
 export const StyledSearchInput = styled.input`
 
     ${ p => p.isLive && css`
-        background-color: pink;
+        background-color: #ddd;
     ` }
 
     color: ${p => p.color};
     border-radius: 0.3rem;
     margin-right: 0.5rem;
+    padding: 0.2rem;
 
 `;
 
@@ -30,7 +32,7 @@ export const StyledSearchBox = styled.div`
     } */ // bu sekilde de yazilabiliyor
 
     ${StyledSearchInput} {
-        color: gray
+        color: rgb(5,5,5)
     }
 
 

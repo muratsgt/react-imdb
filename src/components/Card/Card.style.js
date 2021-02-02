@@ -6,13 +6,13 @@ export const StyledCardWrapper = styled.div`
     padding: 0px;
     width: 150px;
     height: 250px;
-    border: 1px solid rebeccapurple;
+    border: none;
     border-radius: 10px;
     box-shadow: 3px 3px rgba(0,0,0,0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     transition: 0.1s;
     overflow: hidden;
 
@@ -23,7 +23,7 @@ export const StyledCardWrapper = styled.div`
 `;
 
 export const StyledText = styled.h1`
-    color: blue;
+    color: gray;
     font-size: 0.8rem;
 `;
 
@@ -33,7 +33,9 @@ export const StyledDescription = styled.p`
 `;
 
 export const StyledMovieImage = styled.img`
+    margin: 0px;
+    padding: 0px;
     object-fit: cover;
-    width: 150px;
-    height: auto;
+    width: 100%;
+    height: 85%;
 `;
