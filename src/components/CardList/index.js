@@ -1,7 +1,7 @@
 import { useContext} from "react";
 import { Card } from "../Card";
 import { StyledCardList } from './CardList.style'
-import {MovieContext} from "../../App";
+import {MovieContext} from "../../Movies";
 
 
 export const CardList = () => {
@@ -15,6 +15,7 @@ export const CardList = () => {
                         key={index}
                         title={movie.title}
                         desc={movie.overview}
+                        id={movie.id}
                         imgSrc={movie.poster_path ? baseImageUrl+movie.poster_path : "https://cdn.pixabay.com/photo/2016/12/14/23/08/page-not-found-1907792__340.jpg"}
                     />)
             )}

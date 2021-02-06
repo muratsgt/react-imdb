@@ -1,6 +1,6 @@
 import {useState, useRef, useContext} from "react";
 import { StyledSearchBox, StyledSearchInput, StyledSearchButton } from "./SearchBox.style";
-import {MovieContext} from "../../App";
+import {MovieContext} from "../../Movies";
 
 export const SearchBox = () => {
 

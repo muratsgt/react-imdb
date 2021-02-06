@@ -2,7 +2,7 @@
 import "./Card.style.css"; // normal caigirinca
 // import "./Card.style.scss";
 import { StyledCardWrapper, StyledMovieImage, StyledText } from "./Card.style";
-
+import {useHistory} from "react-router-dom";
 
 // const cardStyle = {
 //     color: "blue",
@@ -10,6 +10,8 @@ import { StyledCardWrapper, StyledMovieImage, StyledText } from "./Card.style";
 // }
 
 export const Card = (props) => {
+
+    const history = useHistory();
 
     return (
         <div>
@@ -21,7 +23,7 @@ export const Card = (props) => {
                 <p>CARD</p>
             </div> */}
 
-            <StyledCardWrapper>
+            <StyledCardWrapper onClick={()=>history.push("/detail/" + props.id)}>
                 <StyledMovieImage src={props.imgSrc} alt={"Movie Poster"}/>
                 <StyledText>{props.title}</StyledText>
             </StyledCardWrapper>
