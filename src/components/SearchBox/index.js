@@ -1,4 +1,4 @@
-import {useState, useRef, useContext} from "react";
+import { useRef, useContext} from "react";
 import { StyledSearchBox, StyledSearchInput, StyledSearchButton } from "./SearchBox.style";
 import {MovieContext} from "../../Movies";
 
@@ -12,7 +12,7 @@ export const SearchBox = () => {
     return (
         <StyledSearchBox>
             {/* <StyledSearchInput color="red" isLive onChange={(e)=>setInputValue(e.target.value)}/> */}
-            <StyledSearchInput ref={inputRef} color="red" isLive />
+            <StyledSearchInput placeholder="Search.." ref={inputRef} color="red" isLive />
             <StyledSearchButton onClick={() => {setSearchText(inputRef?.current?.value)}}> Search</StyledSearchButton>
         </StyledSearchBox>
     )
