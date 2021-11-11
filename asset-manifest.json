@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-imdb/static/css/main.d8174517.chunk.css",
+    "main.js": "/react-imdb/static/js/main.57d70e0d.chunk.js",
+    "main.js.map": "/react-imdb/static/js/main.57d70e0d.chunk.js.map",
+    "runtime-main.js": "/react-imdb/static/js/runtime-main.d7e0e646.js",
+    "runtime-main.js.map": "/react-imdb/static/js/runtime-main.d7e0e646.js.map",
+    "static/js/2.752b3f37.chunk.js": "/react-imdb/static/js/2.752b3f37.chunk.js",
+    "static/js/2.752b3f37.chunk.js.map": "/react-imdb/static/js/2.752b3f37.chunk.js.map",
+    "static/js/3.512c63f6.chunk.js": "/react-imdb/static/js/3.512c63f6.chunk.js",
+    "static/js/3.512c63f6.chunk.js.map": "/react-imdb/static/js/3.512c63f6.chunk.js.map",
+    "index.html": "/react-imdb/index.html",
+    "static/css/main.d8174517.chunk.css.map": "/react-imdb/static/css/main.d8174517.chunk.css.map",
+    "static/js/2.752b3f37.chunk.js.LICENSE.txt": "/react-imdb/static/js/2.752b3f37.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d7e0e646.js",
+    "static/js/2.752b3f37.chunk.js",
+    "static/css/main.d8174517.chunk.css",
+    "static/js/main.57d70e0d.chunk.js"
+  ]
+}
