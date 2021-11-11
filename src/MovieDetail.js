@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { StyledMovieImage } from "./components/Card/Card.style";
@@ -13,10 +13,10 @@ export default function MovieDetail() {
 
     const [movData, setMovData] = useState({});
 
-    const {id} = useParams();
+    const { id } = useParams();
 
     useEffect(() => {
-        axios.get(movieBaseUrl+id, {
+        axios.get(movieBaseUrl + id, {
             params: {
                 api_key: apiKey
             }
@@ -28,10 +28,12 @@ export default function MovieDetail() {
     }, []);
 
     return (
-        <div>
-            <StyledMovieImage src={baseImageUrl+movData?.poster_path} alt={"Movie Poster"}/>
-            <h1>{movData.original_title}</h1>
-            <p>{movData.overview}</p>
+        <div style={{ padding:"50px", display: "flex", alignItems:"center", justifyContent:"center", flexWrap:"wrap" }}>
+            <img style={{ padding: "30px", width:"300px" }} src={baseImageUrl + movData?.poster_path} alt={"Movie Poster"} />
+            <div style={{width: "300px"}}>
+                <h1>{movData.original_title}</h1>
+                <p>{movData.overview}</p>
+            </div>
         </div>
     )
 }
